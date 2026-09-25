@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roop — My Wife, My Everything ❤️</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:#10070b;color:#fff1f4;font-family:Georgia,"Times New Roman",serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 20% 20%,#ff3f6c18,transparent 28%),radial-gradient(circle at 80% 70%,#ff9eb418,transparent 30%);z-index:-2}
+a{color:inherit}.section{max-width:1120px;margin:auto;padding:100px 22px}
+.hero{min-height:100vh;display:grid;place-items:center;text-align:center;position:relative;padding:30px 20px;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(#0007,#10070b99),url("images/IMG_0034.jpeg") center/cover;filter:saturate(.9);z-index:-1}
+.hero-card{max-width:900px;padding:50px 25px}
+.kicker{letter-spacing:5px;text-transform:uppercase;color:#ff9db5;font-size:12px}
+h1{font-size:clamp(48px,10vw,105px);line-height:.9;margin:20px 0;color:#fff}
+h2{font-size:clamp(34px,6vw,58px);margin:0 0 22px;color:#ffdce5}
+.hero p{font-size:clamp(18px,3vw,25px);line-height:1.7;max-width:720px;margin:auto}
+.date{display:inline-block;margin-top:25px;border:1px solid #ffffff42;padding:12px 20px;border-radius:999px;background:#ffffff12;backdrop-filter:blur(10px)}
+.scroll{margin-top:55px;color:#ffb1c4;animation:bounce 2s infinite}@keyframes bounce{50%{transform:translateY(8px)}}
+
+.story{text-align:center}.story p{max-width:800px;margin:20px auto;line-height:1.9;font-size:19px;color:#f7dfe5}
+.timeline{margin-top:55px;position:relative}.timeline:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;background:#ff668755}
+.memory{width:calc(50% - 35px);margin:35px 0;padding:26px;border:1px solid #ffffff12;border-radius:24px;background:#ffffff09;backdrop-filter:blur(8px);box-shadow:0 18px 60px #0004}
+.memory:nth-child(odd){margin-right:auto}.memory:nth-child(even){margin-left:auto}
+.memory .tag{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#ff9fb5}
+.memory h3{font-size:25px;margin:9px 0}.memory p{line-height:1.7;color:#eacbd4}
+
+.feature{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
+.feature img,.big-photo img{width:100%;height:100%;object-fit:cover;border-radius:28px;display:block}
+.feature-photo{height:560px}.feature-copy{padding:20px}.feature-copy p{line-height:1.9;font-size:19px;color:#ead3da}
+.love-line{font-size:clamp(30px,5vw,54px);color:#ffb0c2;line-height:1.2;margin:20px 0}
+
+.gallery{display:grid;grid-template-columns:repeat(12,1fr);gap:15px;margin-top:35px}
+.card{overflow:hidden;border-radius:22px;background:#ffffff0a;min-height:250px;border:1px solid #ffffff10}
+.card img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s}
+.card:hover img{transform:scale(1.04)}
+.c1{grid-column:span 7;height:430px}.c2{grid-column:span 5;height:430px}.c3,.c4,.c5,.c6{grid-column:span 3;height:300px}.c7{grid-column:span 6;height:390px}.c8{grid-column:span 6;height:390px}
+
+.quote{text-align:center;padding:85px 20px}.quote blockquote{max-width:850px;margin:auto;font-size:clamp(28px,5vw,48px);line-height:1.45;color:#ffe0e8}.quote small{display:block;margin-top:25px;color:#d99aaa;letter-spacing:2px}
+
+.promise{max-width:900px;margin:auto;text-align:center;padding:65px 28px;border-radius:35px;background:linear-gradient(135deg,#6f1535,#b32655);box-shadow:0 30px 100px #0008}
+.promise p{font-size:19px;line-height:1.9;color:#ffe8ee}
+.big-love{font-size:clamp(35px,7vw,75px);margin:20px 0;color:white}
+button{background:#fff;color:#781738;border:0;padding:14px 24px;border-radius:999px;font-size:16px;cursor:pointer;margin-top:20px}
+#secret{display:none;max-width:700px;margin:25px auto 0;line-height:1.9;font-size:18px}
+footer{text-align:center;padding:60px 20px;color:#c990a2}.hearts{position:fixed;inset:0;pointer-events:none;z-index:5}.heart{position:absolute;bottom:-30px;color:#ff6f91;opacity:.5;animation:up 10s linear infinite}@keyframes up{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}
+
+
+.birthday-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;margin-top:35px}
+.birthday-main{height:570px;overflow:hidden;border-radius:28px;border:1px solid #ffffff12;box-shadow:0 25px 80px #0006}
+.birthday-main img{width:100%;height:100%;object-fit:cover}
+.birthday-copy{padding:10px 10px 10px 18px}
+.birthday-copy p{font-size:19px;line-height:1.9;color:#ead3da}
+.birthday-note{font-style:italic;color:#ffb4c5!important;border-left:2px solid #ff6688;padding-left:18px}
+.birthday-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:20px}
+.birthday-gallery div{height:330px;border-radius:22px;overflow:hidden}
+.birthday-gallery img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.birthday-gallery div:hover img{transform:scale(1.04)}
+
+.first-meet-hero{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;margin-top:35px}
+.first-meet-photo{height:570px;border-radius:30px;overflow:hidden;border:1px solid #ffffff12;box-shadow:0 25px 90px #0007}
+.first-meet-photo img{width:100%;height:100%;object-fit:cover}
+.first-meet-copy{padding:15px}
+.first-meet-copy p{font-size:19px;line-height:1.9;color:#ead3da}
+.first-meet-date{margin-top:28px;color:#ff9fb5;letter-spacing:3px;font-size:12px}
+.first-meet-gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:20px}
+.first-meet-gallery div{height:330px;border-radius:22px;overflow:hidden}
+.first-meet-gallery img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.first-meet-gallery div:hover img{transform:scale(1.04)}
+.first-meet-note{max-width:820px;margin:55px auto 0;text-align:center;font-size:30px;line-height:1.5;color:#ffdce5;font-style:italic}
+.first-meet-note span{font-size:60px;color:#ff7898;vertical-align:middle}
+@media(max-width:760px){
+ .first-meet-hero{grid-template-columns:1fr}.first-meet-photo{height:470px}
+ .first-meet-gallery{grid-template-columns:1fr 1fr}.first-meet-gallery div{height:300px}
+ .first-meet-note{font-size:24px}
+}
+
+@media(max-width:760px){
+ .birthday-grid{grid-template-columns:1fr}.birthday-main{height:470px}.birthday-copy{padding:10px 0}
+ .birthday-gallery{grid-template-columns:1fr}.birthday-gallery div{height:360px}
+}
+
+@media(max-width:760px){
+ .section{padding:70px 16px}.feature{grid-template-columns:1fr}.feature-photo{height:420px}
+ .timeline:before{left:12px}.memory,.memory:nth-child(even),.memory:nth-child(odd){width:calc(100% - 32px);margin:25px 0 25px 32px}
+ .gallery{grid-template-columns:1fr}.card,.c1,.c2,.c3,.c4,.c5,.c6,.c7,.c8{grid-column:span 1;height:300px}
+}
+</style>
+</head>
+<body>
+<div class="hearts">
+  <span class="heart" style="left:8%;font-size:22px;animation-delay:0s">♥</span>
+  <span class="heart" style="left:28%;font-size:16px;animation-delay:3s">♥</span>
+  <span class="heart" style="left:52%;font-size:27px;animation-delay:6s">♥</span>
+  <span class="heart" style="left:80%;font-size:20px;animation-delay:1s">♥</span>
+</div>
+
+<section class="hero">
+ <div class="hero-card">
+  <div class="kicker">For the woman who became my whole world</div>
+  <h1>Roop ❤️</h1>
+  <p><strong>My wife. My everything. My love. My whole world.</strong></p>
+  <p style="margin-top:12px">Our story began with a conversation on <strong>16 January</strong> — and I never knew that one simple “Hey” would lead me to you.</p>
+  <div class="date">16 January → Today • From one “Hey” to forever ❤️</div>
+  <div class="scroll">↓ our story ↓</div>
+ </div>
+</section>
+
+<section class="section story">
+ <div class="kicker">A story I never want to end</div>
+ <h2>Dear Roop,</h2>
+ <p>
+   I don't know exactly when you stopped being just someone I talked to and became
+   someone I couldn't imagine my life without. Somewhere between our first conversations,
+   the calls, the waiting, the laughs, the little arguments, the hugs and all those
+   ordinary moments, you became <strong>home</strong>.
+ </p>
+ <p>
+   Looking at these pictures, I don't just see photographs. I see pieces of our life —
+   moments that remind me how lucky I feel to have found you.
+ </p>
+
+ <div class="timeline">
+  <div class="memory"><div class="tag">16 January</div><h3>Our first “Hey”</h3><p>Every beautiful story has a beginning. Ours began with a conversation that neither of us knew would become this important.</p></div>
+  <div class="memory"><div class="tag">Then, slowly...</div><h3>You became my favourite person</h3><p>Messages became calls. Calls became memories. And somehow, talking to you became one of my favourite parts of every day.</p></div>
+  <div class="memory"><div class="tag">When we met</div><h3>From a screen to my arms ❤️</h3><p>The first time we were actually together, everything felt more real. A hug could finally say what thousands of messages couldn't.</p></div>
+  <div class="memory"><div class="tag">Our little adventures</div><h3>Cars, cafés, parks & courts</h3><p>From sitting together in the car to walks, meals, badminton and random little plans — the place never mattered as much as having you beside me.</p></div>
+  <div class="memory"><div class="tag">Today</div><h3>And there is still so much ahead</h3><p>We've already collected so many memories. I want the next chapters to be even bigger, softer, crazier and more beautiful — together.</p></div>
+ </div>
+</section>
+
+<section class="section">
+ <div class="feature">
+  <div class="feature-photo"><img src="images/IMG_0034.jpeg" alt="A memory together"></div>
+  <div class="feature-copy">
+   <div class="kicker">One of my favourite feelings</div>
+   <div class="love-line">“Just being beside you feels like home.”</div>
+   <p>This picture reminds me that happiness doesn't always need a big occasion. Sometimes it's simply sitting beside the person you love and looking at each other with that little smile.</p>
+  </div>
+ </div>
+</section>
+
+<section class="section">
+ <div class="kicker" style="text-align:center">The memories I want to keep forever</div>
+ <h2 style="text-align:center">Our little world 📸</h2>
+ <div class="gallery">
+  <div class="card c1"><img src="images/IMG_0034.jpeg" alt="Together in the car"></div>
+  <div class="card c2"><img src="images/IMG_0726.jpeg" alt="A car memory"></div>
+  <div class="card c3"><img src="images/IMG_9781.png" alt="Park memory"></div>
+  <div class="card c4"><img src="images/IMG_9774.png" alt="Walking together"></div>
+  <div class="card c5"><img src="images/IMG_7955.jpeg" alt="Restaurant memory"></div>
+  <div class="card c6"><img src="images/IMG_8829.jpeg" alt="A close moment"></div>
+  <div class="card c7"><img src="images/IMG_8833.jpeg" alt="Smiling together"></div>
+  <div class="card c8"><img src="images/IMG_0737.jpeg" alt="Coffee house memory"></div>
+ </div>
+</section>
+
+
+
+<section class="section first-meet">
+ <div class="kicker" style="text-align:center">6 June • Chandigarh</div>
+ <h2 style="text-align:center">The Day We Finally Met ❤️</h2>
+
+ <div class="first-meet-hero">
+   <div class="first-meet-photo">
+     <img src="images/first_meet_IMG_7997.jpeg" alt="First meeting in Chandigarh">
+   </div>
+   <div class="first-meet-copy">
+     <div class="love-line">6 June. Chandigarh. You and me.</div>
+     <p>
+       After all the conversations, calls, waiting and wondering what it would
+       actually feel like to be together, <strong>6 June became real.</strong>
+     </p>
+     <p>
+       I still love the thought that the person who had been on my phone,
+       in my thoughts and in my everyday life was suddenly standing right
+       beside me. That first meeting changed a simple story into something
+       I could actually hold, look at and remember forever.
+     </p>
+     <p>
+       And somehow, in all these pictures, I can see the beginning of the
+       memories we would keep making together.
+     </p>
+     <div class="first-meet-date">CHANDIGARH • 06.06 • OUR FIRST MEET</div>
+   </div>
+ </div>
+
+ <div class="first-meet-gallery">
+   <div><img src="images/first_meet_IMG_7955.jpeg" alt="First meeting restaurant memory"></div>
+   <div><img src="images/first_meet_IMG_7975.jpeg" alt="First meeting mirror photo"></div>
+   <div><img src="images/first_meet_IMG_7966.jpeg" alt="First meeting together"></div>
+   <div><img src="images/first_meet_IMG_7969.jpeg" alt="First meeting mirror memory"></div>
+ </div>
+
+ <div class="first-meet-note">
+   <span>“</span>
+   We spent so much time waiting for the day we'd finally meet.
+   And then suddenly, there we were — together.
+   <span>”</span>
+ </div>
+</section>
+
+<section class="section birthday">
+ <div class="kicker" style="text-align:center">28 June • Kunda</div>
+ <h2 style="text-align:center">Her Birthday — A Day I Came Just For You 🎂❤️</h2>
+ <div class="birthday-grid">
+   <div class="birthday-main"><img src="images/IMG_8950.jpeg" alt="Birthday memory in Kunda"></div>
+   <div class="birthday-copy">
+     <div class="love-line">Your birthday became one of my favourite memories.</div>
+     <p>
+       28 June wasn't just another date. It was the day I came to Kunda to be with you
+       and celebrate <strong>you</strong>. And honestly, being there with you was the
+       best part of the whole day.
+     </p>
+     <p>
+       From the cake and the little smiles to holding your hand and simply sitting
+       beside you, these are the moments I want to remember for a very, very long time.
+     </p>
+     <p class="birthday-note">
+       “If I could keep one day in a little box and open it whenever I miss you,
+       this would be one of those days.”
+     </p>
+   </div>
+ </div>
+
+ <div class="birthday-gallery">
+   <div><img src="images/IMG_8844.jpeg" alt="Birthday cake memory"></div>
+   <div><img src="images/IMG_8869.jpeg" alt="Holding hands on her birthday"></div>
+   <div><img src="images/IMG_8829.jpeg" alt="Birthday celebration together"></div>
+ </div>
+</section>
+
+<section class="quote">
+ <blockquote>“I don't want just the perfect days with you. I want the ordinary mornings, silly conversations, long drives, difficult days, random laughs and every little moment in between.”</blockquote>
+ <small>— to my Roop ❤️</small>
+</section>
+
+<section class="section">
+ <div class="feature">
+  <div class="feature-copy">
+   <div class="kicker">And this one...</div>
+   <div class="love-line">You make my heart feel at home.</div>
+   <p>There are moments when I look at you and forget what I was about to say. Not because I have nothing to say — but because sometimes I am just grateful that you're there.</p>
+   <p>You're not just a part of my life. You are woven into the way I imagine my future.</p>
+  </div>
+  <div class="feature-photo"><img src="images/IMG_0822.jpeg" alt="A special memory"></div>
+ </div>
+</section>
+
+<section class="section">
+ <div class="promise">
+  <div class="kicker">My favourite promise</div>
+  <div class="big-love">My wife. My everything. ❤️</div>
+  <p>
+   Roop, I know we're not perfect. We have beautiful days, difficult days,
+   misunderstandings, distance and moments when emotions get the better of us.
+   But through all of it, one thing remains simple for me:
+   <strong>I love you.</strong>
+  </p>
+  <p>
+   Thank you for every memory, every smile, every hug, every conversation and
+   every little piece of yourself you've shared with me.
+   If life is a book, I don't want our story to be a short chapter.
+   <strong>I want pages and pages of us.</strong>
+  </p>
+  <button onclick="document.getElementById('secret').style.display='block';this.textContent='❤️ You found it'">One last thing for you...</button>
+  <div id="secret">
+    Roop, if I could go back to 16 January and stand at the beginning of our story,
+    knowing everything I know now, I would still start that conversation.
+    I would still choose to know you. I would still choose every laugh, every hug,
+    every memory and every chapter that brought me here.<br><br>
+    <strong>You're my wife, my everything, my love, my whole world. ❤️<br>
+    And I hope you always know how deeply, genuinely and completely I love you.</strong>
+  </div>
+ </div>
+</section>
+
+<footer>
+ <strong>Made for Roop ❤️</strong><br>
+ Our story started with a simple “Hey”. The rest is still being written.
+</footer>
+
+<script>
+document.addEventListener("click",e=>{
+ const h=document.createElement("span");h.textContent="♥";
+ h.style.cssText=`position:fixed;left:${e.clientX}px;top:${e.clientY}px;color:#ff6688;font-size:20px;pointer-events:none;z-index:20;transition:1s`;
+ document.body.appendChild(h);requestAnimationFrame(()=>{h.style.transform="translateY(-65px) scale(1.8)";h.style.opacity="0"});
+ setTimeout(()=>h.remove(),1000);
+});
+</script>
+</body>
+</html>
